@@ -9,7 +9,7 @@
 		"description": "You can specify 'macros', i.e. reusable pieces of documentation. For that, first specify a template anywhere in the comments, like:"
 	},
 	"mockstream": {
-		"prefix": "",
+		"prefix": "mockstream",
 		"body": [
 			" test('when streamValue', () {",
 			"      when(() => foo.streamValue).thenAnswer((_) => Stream.value(42));",
