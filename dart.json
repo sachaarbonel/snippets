@@ -1,0 +1,30 @@
+{
+	// Place your snippets for dart here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"You can specify 'macros', i.e. reusable pieces of documentation. For that, first specify a template anywhere in the comments, like:": {
+		"prefix": "macro",
+		"body": [
+			"/// {@template reactions}",
+			"/// Shared docs",
+			"/// {@endtemplate}"
+		],
+		"description": "You can specify 'macros', i.e. reusable pieces of documentation. For that, first specify a template anywhere in the comments, like:"
+	},
+	"mockstream": {
+		"prefix": "",
+		"body": [
+			" test('when streamValue', () {",
+			"      when(() => foo.streamValue).thenAnswer((_) => Stream.value(42));",
+			"      expectLater(",
+			"        foo.streamValue,",
+			"        emitsInOrder(<Matcher>[equals(42), emitsDone]),",
+			"      );",
+			"      verify(() => foo.streamValue).called(1);",
+			"    });"
+		],
+		"description": "mockstream"
+	}
+}
